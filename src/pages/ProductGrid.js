@@ -74,7 +74,7 @@ function ProductGrid() {
                 {products.map((product) => (
                   <tr key={product.id}>
                     <td>{product.product_name}</td>
-                    <td>{product.category ? product.category.name : 'N/A'}</td>
+                    <td>{product.category ? product.category.category_name : 'N/A'}</td>
                     <td>
                       <span className={`status ${product.status ? 'completed' : 'pending'}`}>
                         {product.status ? 'Active' : 'Inactive'}
